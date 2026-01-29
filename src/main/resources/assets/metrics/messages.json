@@ -1,0 +1,38 @@
+{
+  "metrics.message.pvp_damage": "PvP Урон: %s нанес %s урона %s",
+  "metrics.message.died_self": [
+    "%s умер",
+    "%s погиб",
+    "%s скончался",
+    "%s отправился на тот свет"
+  ],
+  "metrics.message.suicide": [
+    "%s самоубился",
+    "%s покончил с собой",
+    "%s решил уйти из жизни",
+    "%s не выдержал давления"
+  ],
+  "metrics.message.teamkilled": [
+    "%s убил своего тиммейта %s",
+    "%s предал %s",
+    "%s выстрелил в спину %s",
+    "%s ликвидировал союзника %s"
+  ],
+  "metrics.message.killed": [
+    "%s убил %s",
+    "%s уничтожил %s",
+    "%s расправился с %s",
+    "%s отправил %s на респаун",
+    "%s победил %s"
+  ],
+  "metrics.message.finished_off": [
+    "%s добивает %s после %s",
+    "%s стилит фраг %s у %s",
+    "%s завершает начатое %s над %s"
+  ],
+  "metrics.message.assists_prefix": " с помощью ",
+  "metrics.message.assists_more": " и еще %s",
+  "metrics.message.assists_suffix": "",
+  "metrics.message.assist_entry": "%s"
+}
+

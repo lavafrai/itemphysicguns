@@ -1,0 +1,13 @@
+{
+  "metrics.message.pvp_damage": "PvP Урон: %s нанес %s урона %s",
+  "metrics.message.died_self": "%s умер",
+  "metrics.message.suicide": "%s самоубился",
+  "metrics.message.teamkilled": "%s убил своего тиммейта %s",
+  "metrics.message.killed": "%s убил %s",
+  "metrics.message.finished_off": "%s добивает %s после %s",
+  "metrics.message.assists_prefix": " с помощью ",
+  "metrics.message.assists_more": " и еще %s",
+  "metrics.message.assists_suffix": "",
+  "metrics.message.assist_entry": "%s"
+}
+

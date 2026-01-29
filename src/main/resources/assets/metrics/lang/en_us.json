@@ -1,0 +1,13 @@
+{
+  "metrics.message.pvp_damage": "PvP Damage: %s dealt %s damage to %s",
+  "metrics.message.died_self": "%s died",
+  "metrics.message.suicide": "%s committed suicide",
+  "metrics.message.teamkilled": "%s teamkilled %s",
+  "metrics.message.killed": "%s killed %s",
+  "metrics.message.finished_off": "%s finishes off %s after %s",
+  "metrics.message.assists_prefix": " with help of ",
+  "metrics.message.assists_more": " and %s more",
+  "metrics.message.assists_suffix": "",
+  "metrics.message.assist_entry": "%s"
+}
+

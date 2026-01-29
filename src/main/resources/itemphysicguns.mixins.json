@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.lavafrai.svogame.itemphysicguns.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "itemphysicguns.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "ItemPhysicClientMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
