@@ -3,9 +3,11 @@
 package ru.lavafrai.svogame.itemphysicguns
 
 import com.mojang.logging.LogUtils
+import net.minecraftforge.fml.ModList
 import net.minecraft.world.entity.item.ItemEntity
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent
+import ru.lavafrai.svogame.itemphysicguns.embededProviders.SuperbWarfareProvider
 import ru.lavafrai.svogame.itemphysicguns.embededProviders.TaczProvider
 import thedarkcolour.kotlinforforge.forge.MOD_BUS
 
@@ -19,20 +21,25 @@ class ItemPhysicGuns {
         private lateinit var instance: ItemPhysicGuns
 
         @JvmStatic
-        public fun getInstance(): ItemPhysicGuns {
+        fun getInstance(): ItemPhysicGuns {
             return instance
         }
     }
 
 
     init {
+        if (!ModList.get().isLoaded("itemphysic") && !ModList.get().isLoaded("itemphysiclite")) {
+            throw RuntimeException("Neither 'itemphysic' nor 'itemphysiclite' is installed! One of them is required for ItemPhysicGuns to work.")
+        }
         initializeMod()
     }
 
     fun initializeMod() {
         instance = this
         MOD_BUS.addListener(this::commonSetup)
-        providers.add(TaczProvider())
+
+        if (ModList.get().isLoaded("tacz")) providers.add(TaczProvider())
+        if (ModList.get().isLoaded("superbwarfare")) providers.add(SuperbWarfareProvider())
     }
 
     private fun commonSetup(@Suppress("UNUSED_PARAMETER") event: FMLCommonSetupEvent) {

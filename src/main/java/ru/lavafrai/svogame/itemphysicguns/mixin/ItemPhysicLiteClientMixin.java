@@ -11,10 +11,10 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import ru.lavafrai.svogame.itemphysicguns.ItemPhysicGuns;
 import ru.lavafrai.svogame.itemphysicguns.ItemTransform;
-import team.creative.itemphysic.client.ItemPhysicClient;
+import team.creative.itemphysiclite.ItemPhysicLite;
 
-@Mixin(ItemPhysicClient.class)
-public class ItemPhysicClientMixin {
+@Mixin(ItemPhysicLite.class)
+public class ItemPhysicLiteClientMixin {
     @Inject(
         method = "render",
         at = @At(
