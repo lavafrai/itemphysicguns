@@ -22,8 +22,7 @@ public class ItemPhysicClientMixin {
             target = "Lcom/mojang/blaze3d/vertex/PoseStack;mulPose(Lorg/joml/Quaternionf;)V",
             ordinal = 1,
             shift = At.Shift.AFTER
-        ),
-        remap = false
+        )
     )
     private static void injectCustomRotation(
             ItemEntity entity,
