@@ -108,7 +108,10 @@ dependencies {
     compileOnly(fg.deobf("curse.maven:itemphysic-lite-270441:6045994"))
     implementation(fg.deobf("curse.maven:creativecore-257814:6383884"))
 
+    implementation(fg.deobf("curse.maven:vics-point-blank-961053:6012485"))
+
     implementation(fg.deobf("curse.maven:timeless-and-classics-zero-1028108:7401617"))
+
     implementation(fg.deobf("curse.maven:superb-warfare-1218165:7292685"))
     implementation(fg.deobf("curse.maven:geckolib-388172:7025129"))
     implementation(fg.deobf("curse.maven:curios-309927:5680164"))
