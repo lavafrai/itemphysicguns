@@ -51,5 +51,12 @@ license = "${mod_license}"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies."${mod_id}"]]
+    modId="pointblank"
+    mandatory=false
+    versionRange="[1.9.6,)"
+    ordering="NONE"
+    side="BOTH"
+
 [[mixins]]
     config="itemphysicguns.mixins.json"
