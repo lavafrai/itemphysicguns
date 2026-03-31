@@ -109,12 +109,14 @@ dependencies {
     implementation(fg.deobf("curse.maven:creativecore-257814:6383884"))
 
     implementation(fg.deobf("curse.maven:vics-point-blank-961053:6012485"))
+    implementation(fg.deobf("curse.maven:scorched-guns-802940:7232063"))
 
     implementation(fg.deobf("curse.maven:timeless-and-classics-zero-1028108:7401617"))
 
     implementation(fg.deobf("curse.maven:superb-warfare-1218165:7292685"))
     implementation(fg.deobf("curse.maven:geckolib-388172:7025129"))
     implementation(fg.deobf("curse.maven:curios-309927:5680164"))
+    implementation(fg.deobf("curse.maven:framework-549225:5911986"))
 }
 
 tasks.withType<ProcessResources> {
@@ -129,7 +131,8 @@ tasks.withType<ProcessResources> {
             "mod_license" to project.property("mod_license"),
             "mod_version" to mod_version,
             "mod_authors" to project.property("mod_authors"),
-            "mod_description" to project.property("mod_description")
+            "mod_description" to project.property("mod_description"),
+            "MixinConfigs" to "itemphysicguns.mixins.json",
     )
     inputs.properties(replaceProperties)
 

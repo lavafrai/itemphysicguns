@@ -39,6 +39,7 @@ class ItemPhysicGuns {
         if (ModList.get().isLoaded("tacz")) ProviderHelper.registerTacz(providers)
         if (ModList.get().isLoaded("superbwarfare")) ProviderHelper.registerSuperbWarfare(providers)
         if (ModList.get().isLoaded("pointblank")) ProviderHelper.registerVicsPointBlank(providers)
+        if (ModList.get().isLoaded("scguns")) ProviderHelper.registerScorchedGuns2(providers)
     }
 
     private fun commonSetup(@Suppress("UNUSED_PARAMETER") event: FMLCommonSetupEvent) {

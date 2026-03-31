@@ -58,5 +58,12 @@ license = "${mod_license}"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies."${mod_id}"]]
+    modId="scguns"
+    mandatory=false
+    versionRange="[0.5.5,)"
+    ordering="NONE"
+    side="BOTH"
+
 [[mixins]]
     config="itemphysicguns.mixins.json"

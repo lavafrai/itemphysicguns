@@ -1,5 +1,6 @@
 package ru.lavafrai.svogame.itemphysicguns
 
+import ru.lavafrai.svogame.itemphysicguns.embededProviders.SmartScorchedGuns2Provider
 import ru.lavafrai.svogame.itemphysicguns.embededProviders.SuperbWarfareProvider
 import ru.lavafrai.svogame.itemphysicguns.embededProviders.TaczProvider
 import ru.lavafrai.svogame.itemphysicguns.embededProviders.VicsPointBlankProvider
@@ -15,5 +16,9 @@ object ProviderHelper {
 
     fun registerVicsPointBlank(providers: MutableList<ItemTransformationProvider>) {
         providers.add(VicsPointBlankProvider())
+    }
+
+    fun registerScorchedGuns2(providers: MutableList<ItemTransformationProvider>) {
+        providers.add(SmartScorchedGuns2Provider())
     }
 }
